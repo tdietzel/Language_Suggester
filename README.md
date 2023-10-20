@@ -19,7 +19,7 @@ _An application for people interested in coding to decide which language they sh
 * _Fork your own copy of this repository from [GitHub](https://github.com/tdietzel22/Language_Suggester)_
 * _Open Git BASH [Download Link](https://gitforwindows.org/)_
 * _Use 'git clone projecturl' to clone the project from the forked repo_
-* _Open the project in [VS Code](https://code.visualstudio.com/) (Git shortcut: enter 'code .' after navigating to the top level of the directory)_
+* _Open the project in [VS Code](https://code.visualstudio.com/) (Git shortcut: enter 'code .' after navigating to the top level of the project directory)_
 * _View site on [github-pages](https://tdietzel22.github.io/language_suggester/)_
 
 ## Known Bugs
