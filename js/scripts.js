@@ -18,7 +18,7 @@ function languageCalc(e) {
     let java = 0;
     let python = 0;
 
-    reset(cSharp, java, python);
+    reset();
 
     if (colorChoice.value === "c#") {
         cSharp += 1;
@@ -62,18 +62,18 @@ function languageCalc(e) {
 
     if (cSharp > java && cSharp > python) {
         console.log("Python = ", python, " JavaScript = ", java, " C# = ", cSharp)
-        document.querySelector("#displayResult").innerHTML = "cSharp is the winner!";
+        document.querySelector("#displayResult").innerHTML = "cSharp is the choice for you!";
     } else if (java > cSharp && java > python) {
         console.log("Python = ", python, " JavaScript = ", java, " C# = ", cSharp)
-        document.querySelector("#displayResult").innerHTML = "JavaScript is the winner!";
+        document.querySelector("#displayResult").innerHTML = "JavaScript is the choice for you!";
     } else if (python > cSharp && python > java) {
         console.log("Python = ", python, " JavaScript = ", java, " C# = ", cSharp)
-        document.querySelector("#displayResult").innerHTML = "Python is the winner!";
+        document.querySelector("#displayResult").innerHTML = "Python is the choice for you!";
     } else if (java === cSharp || java === python) {
         console.log("Python = ", python, " JavaScript = ", java, " C# = ", cSharp)
-        document.querySelector("#displayResult").innerHTML = "JavaScript is the winner!";
+        document.querySelector("#displayResult").innerHTML = "JavaScript is the choice for you!";
     } else if (python === cSharp) {
         console.log("Python = ", python, " JavaScript = ", java, " C# = ", cSharp)
-        document.querySelector("#displayResult").innerHTML = "Python is the winner!";
+        document.querySelector("#displayResult").innerHTML = "Python is the choice for you!";
     }
 }
