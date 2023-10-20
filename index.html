@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/scripts.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programming Language Suggester</title>
 </head>
 <body>
     <h1>Programming Language Suggester</h1>
+    <form id="languagePicker">
+        <fieldset>
+            <legend>Which color is your favorite?</legend>
+            <div>
+                <label for="colorFirstChoice">Red</label>
+                <input type="radio" id="colorFirstChoice" name="favColor" value="c#" checked/>
+                <br>
+                <label for="colorSecondChoice">Blue</label>
+                <input type="radio" id="colorSecondChoice" name="favColor" value="javaScript"/>
+                <br>
+                <label for="colorThirdChoice">Green</label>
+                <input type="radio" id="colorThirdChoice" name="favColor" value="python"/>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Which animal is your favorite?</legend>
+            <div>
+                <label for="animalFirstChoice">Cat</label>
+                <input type="radio" id="animalFirstChoice" name="favAnimal" value="python" checked/>
+                <br>
+                <label for="animalSecondChoice">Dog</label>
+                <input type="radio" id="animalSecondChoice" name="favAnimal" value="javaScript"/>
+                <br>
+                <label for="animalThirdChoice">Horse</label>
+                <input type="radio" id="animalThirdChoice" name="favAnimal" value="c#"/>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>What state would you rather live in?</legend>
+            <div>
+                <label for="stateFirstChoice">Oregon</label>
+                <input type="radio" id="stateFirstChoice" name="favState" value="javaScript" checked/>
+                <br>
+                <label for="stateSecondChoice">California</label>
+                <input type="radio" id="stateSecondChoice" name="favState" value="c#"/>
+                <br>
+                <label for="stateThirdChoice">Washington</label>
+                <input type="radio" id="stateThirdChoice" name="favState" value="python"/>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Out of these 3, which food is your favorite?</legend>
+            <div>
+                <label for="foodFirstChoice">Salad</label>
+                <input type="radio" id="foodFirstChoice" name="favFood" value="c#" checked>
+                <br>
+                <label for="foodSecondChoice">Steak</label>
+                <input type="radio" id="foodSecondChoice" name="favFood" value="python"/>
+                <br>
+                <label for="thirdFoodChoice">Sea Food</label>
+                <input type="radio" id="thirdFoodChoice" name="favFood" value="javaScript"/>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>What language sounds interesting?</legend>
+            <div>
+                <label for="languageFirstChoice">C#</label>
+                <input type="radio" id="languageFirstChoice" name="favLanguage" value="c#" checked/>
+                <br>
+                <label for="languageSecondChoice">JavaScript</label>
+                <input type="radio" id="languageSecondChoice" name="favLanguage" value="javaScript"/>
+                <br>
+                <label for="languageThirdChoice">Python</label>
+                <input type="radio" id="languageThirdChoice" name="favLanguage" value="python"/>
+            </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="displayResult"></p>
 </body>
 </html>
