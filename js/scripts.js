@@ -62,18 +62,23 @@ function languageCalc(e) {
 
     if (cSharp > java && cSharp > python) {
         console.log("Python = ", python, " JavaScript = ", java, " C# = ", cSharp)
-        document.querySelector("#displayResult").innerHTML = "cSharp is the choice for you!";
+        document.querySelector("#displayResult").innerHTML = "C# is the choice for you!";
+        document.querySelector("#displayLink").innerHTML = "<a href='https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/'>Learn more about C#</a>"
     } else if (java > cSharp && java > python) {
         console.log("Python = ", python, " JavaScript = ", java, " C# = ", cSharp)
         document.querySelector("#displayResult").innerHTML = "JavaScript is the choice for you!";
+        document.querySelector("#displayLink").innerHTML = "<a href='https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics'>Learn more about JavaScript</a>"
     } else if (python > cSharp && python > java) {
         console.log("Python = ", python, " JavaScript = ", java, " C# = ", cSharp)
         document.querySelector("#displayResult").innerHTML = "Python is the choice for you!";
+        document.querySelector("#displayLink").innerHTML = "<a href='https://www.python.org/doc/essays/blurb/'>Learn more about Python</a>"
     } else if (java === cSharp || java === python) {
         console.log("Python = ", python, " JavaScript = ", java, " C# = ", cSharp)
         document.querySelector("#displayResult").innerHTML = "JavaScript is the choice for you!";
+        document.querySelector("#displayLink").innerHTML = "<a href='https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics'>Learn more about JavaScript</a>"
     } else if (python === cSharp) {
         console.log("Python = ", python, " JavaScript = ", java, " C# = ", cSharp)
         document.querySelector("#displayResult").innerHTML = "Python is the choice for you!";
+        document.querySelector("#displayLink").innerHTML = "<a href='https://www.python.org/doc/essays/blurb/'>Learn more about Python</a>"
     }
 }

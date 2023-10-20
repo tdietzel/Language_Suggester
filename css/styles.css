@@ -20,10 +20,6 @@ body {
         height: 10px;
       background-color:#f8f8f8;
     }
-h2{
-    text-align: center;
-    color:rgb(30, 255, 0);
-}
 #languagePicker {
     text-align: center;
     color:white;
@@ -41,4 +37,14 @@ legend {
 .btn {
     color:rgb(195, 4, 4);
     background-color: black;
+}
+#displayResult {
+    text-align: center;
+    color:rgb(30, 255, 0);
+}
+#displayLink {
+    text-align: center;
+}
+#displayLink a {
+    color:red;
 }
