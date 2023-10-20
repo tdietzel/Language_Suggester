@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/scripts.js"></script>
     <meta charset="UTF-8">
@@ -11,6 +12,7 @@
     <h1>Programming Language Suggester</h1>
     <form id="languagePicker">
         <fieldset>
+            <!-- Question One -->
             <legend>Which color is your favorite?</legend>
             <div>
                 <label for="colorFirstChoice">Red</label>
@@ -24,59 +26,63 @@
             </div>
         </fieldset>
         <fieldset>
+            <!-- Question Two -->
             <legend>Which animal is your favorite?</legend>
             <div>
                 <label for="animalFirstChoice">Cat</label>
-                <input type="radio" id="animalFirstChoice" name="favAnimal" value="python" checked/>
+                <input type="radio" id="animalFirstChoice" name="favAnimal" value="c#" checked/>
                 <br>
                 <label for="animalSecondChoice">Dog</label>
                 <input type="radio" id="animalSecondChoice" name="favAnimal" value="javaScript"/>
                 <br>
                 <label for="animalThirdChoice">Horse</label>
-                <input type="radio" id="animalThirdChoice" name="favAnimal" value="c#"/>
+                <input type="radio" id="animalThirdChoice" name="favAnimal" value="python"/>
             </div>
         </fieldset>
         <fieldset>
+            <!-- Question Three -->
             <legend>Which state would you rather live in?</legend>
             <div>
                 <label for="stateFirstChoice">Oregon</label>
-                <input type="radio" id="stateFirstChoice" name="favState" value="python" checked/>
+                <input type="radio" id="stateFirstChoice" name="favState" value="javaScript" checked/>
                 <br>
                 <label for="stateSecondChoice">Washington</label>
-                <input type="radio" id="stateSecondChoice" name="favState" value="javaScript"/>
+                <input type="radio" id="stateSecondChoice" name="favState" value="c#"/>
                 <br>
                 <label for="stateThirdChoice">California</label>
-                <input type="radio" id="stateThirdChoice" name="favState" value="c#"/>
+                <input type="radio" id="stateThirdChoice" name="favState" value="python"/>
             </div>
         </fieldset>
         <fieldset>
+            <!-- Question Four -->
             <legend>Out of these 3 foods, which is your favorite?</legend>
             <div>
-                <label for="foodFirstChoice">Cat</label>
-                <input type="radio" id="foodFirstChoice" name="favFood" value="python" checked/>
+                <label for="foodFirstChoice">Salad</label>
+                <input type="radio" id="foodFirstChoice" name="favFood" value="javaScript" checked/>
                 <br>
-                <label for="foodSecondChoice">Dog</label>
-                <input type="radio" id="foodSecondChoice" name="favFood" value="javaScript"/>
+                <label for="foodSecondChoice">Steak</label>
+                <input type="radio" id="foodSecondChoice" name="favFood" value="python"/>
                 <br>
-                <label for="foodThirdChoice">Horse</label>
+                <label for="foodThirdChoice">Seafood</label>
                 <input type="radio" id="foodThirdChoice" name="favFood" value="c#"/>
             </div>
         </fieldset>
         <fieldset>
+            <!-- Question Five -->
             <legend>What language sounds most interesting?</legend>
             <div>
-                <label for="languageFirstChoice">Cat</label>
-                <input type="radio" id="animalFirstChoice" name="favLanguage" value="python" checked/>
+                <label for="languageFirstChoice">Python</label>
+                <input type="radio" id="animalFirstChoice" name="favLanguage" value="c#" checked/>
                 <br>
-                <label for="languageSecondChoice">Dog</label>
+                <label for="languageSecondChoice">JavaScript</label>
                 <input type="radio" id="animalSecondChoice" name="favLanguage" value="javaScript"/>
                 <br>
-                <label for="languageThirdChoice">Horse</label>
-                <input type="radio" id="animalThirdChoice" name="favLanguage" value="c#"/>
+                <label for="languageThirdChoice">C#</label>
+                <input type="radio" id="animalThirdChoice" name="favLanguage" value="python"/>
             </div>
         </fieldset>
-        <button type="submit">Submit</button>
+        <button type="button" class="btn btn-primary btn-lg">See Results!</button>
     </form>
-    <p id="displayResult"></p>
+    <h2 id="displayResult"></h2>
 </body>
 </html>
