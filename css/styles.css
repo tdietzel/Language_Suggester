@@ -1,10 +1,25 @@
 body {
     background-color: blue;
 }
-h1 {
+.seven h1 {
     text-align: center;
-    color:rgb(30, 255, 0);
-}
+        font-size:30px; font-weight:300; color:#ff0000; letter-spacing:1px;
+        text-transform: uppercase;
+    
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-template-rows: 27px 0;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    .seven h1:after,.seven h1:before {
+        content: " ";
+        display: block;
+        border-bottom: 2px solid #c50000;
+        border-top: 2px solid #c50000;
+        height: 10px;
+      background-color:#f8f8f8;
+    }
 h2{
     text-align: center;
     color:rgb(30, 255, 0);
@@ -14,6 +29,7 @@ h2{
     color:white;
     font-size: larger;
     font-family: sans-serif;
+    accent-color: red;
 }
 legend {
   color: white;
@@ -21,4 +37,8 @@ legend {
   padding: 5px 10px;
   font-size: 17px;
   font-family:courier New;
+}
+.btn {
+    color:rgb(195, 4, 4);
+    background-color: black;
 }
