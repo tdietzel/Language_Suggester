@@ -48,3 +48,7 @@ legend {
 #displayLink a {
     color:red;
 }
+
+@media screen and (max-width: 720px) {
+    
+}
