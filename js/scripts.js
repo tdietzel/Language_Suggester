@@ -1,11 +1,17 @@
 window.addEventListener("load", () => {
     const form = document.querySelector("#languagePicker");
     form.addEventListener("submit", languageCalc);
+    document.getElementById("colorFirstChoice").addEventListener("change", colorChange);
 });
+
+function colorChange() {
+    document.getElementById("change1").style.color = "red";
+  }
 
 function reset() {
     document.querySelector("#displayResult").innerHTML = "";
 }
+
 
 function languageCalc(e) {
     e.preventDefault();
